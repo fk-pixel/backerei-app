@@ -1,14 +1,14 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="dark">
     <ion-title> Bäckerei Rezepten </ion-title>
-    <ion-card-subtitle style="margin-left:0.5rem;">alle Ihre Rezepte in der Tasche!</ion-card-subtitle>
+    <ion-card-subtitle style="margin-left:0.5rem;">alle Rezepte in der Tasche!</ion-card-subtitle>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-list *ngFor="let note of notes" (click)="openNote(note)">
     🥯
-    <ion-label style="border-bottom:0.2px solid #897F7B; cursor: pointer; background-color: #F6EEEA"> {{note.title}} </ion-label>
+    <ion-label style="border-bottom:0.2px solid #897F7B; cursor: pointer; background-color: #EDE9E7"> {{note.title}} </ion-label>
   </ion-list>
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
     <ion-fab-button color="warning" (click)="addNote()">
