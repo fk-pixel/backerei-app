@@ -26,3 +26,21 @@
 @import "~@ionic/angular/css/flex-utils.css";
 
 
+.my-custom-class {
+    .alert-wrapper {
+      .alert-head {
+          // header styling here eg. background
+          h2 {
+              // header text styling here eg. color, font size
+          }
+          border-bottom: 0.2px solid #EDE9E7;
+          box-shadow: 1px 2px #EDE9E7;
+      }
+      button {
+        //border:0.2px solid yellow;   
+        //border-radius: 15px;   
+        :hover{background-color: #EDE9E7 }
+
+      }
+    }
+  }

@@ -29,6 +29,7 @@ export class HomePage {
 
   async addNote() {
     const alert = await this.alertCtrl.create({
+      cssClass: "my-custom-class",
       header: 'Neues Rezept hinzufügen',
       inputs: [
         {
