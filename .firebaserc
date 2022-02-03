@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ionicx-auth": {
+      "hosting": {
+        "app": [
+          "ionicx-auth"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ionicx-auth"
+  }
+}

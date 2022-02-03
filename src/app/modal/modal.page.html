@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="information">
+    <ion-title>Information</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="note">
+    <ion-item>
+      <ion-label position="stacked">Title</ion-label>
+      <ion-input [(ngModel)]="note.title"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Zutaten</ion-label>
+      <ion-textarea [(ngModel)]="note.zutaten" rows="8"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail slot="start">
+       <ion-img [src]="note.bild"></ion-img>
+     </ion-thumbnail>
+    </ion-item>
+  </div>
+
+  <ion-button expand="block" color="success" (click)="updateNote()">
+    <ion-icon name="save" slot="start"></ion-icon>
+    Aktualisieren
+  </ion-button>  
+  <ion-button expand="block" color="danger" (click)="deleteNote()">
+    <ion-icon name="trash" slot="start"></ion-icon>
+    Löschen
+  </ion-button>   
+</ion-content>
